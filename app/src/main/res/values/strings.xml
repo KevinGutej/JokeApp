@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Joke of the Day</string>
+    <string name="show_joke_btn">Show a joke</string>
+    <string name="current_joke">A tester walks into a bar. Orders a beer. Orders 0 beers. Orders 999999999 beers. Orders a lizard. Orders -1 beers.</string>
+    <string name="guest_name">guest</string>
+    <string name="greeting">Hello, %1$s! Here is your joke number %2$d.</string>
+</resources>
