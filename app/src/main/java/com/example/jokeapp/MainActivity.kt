@@ -18,10 +18,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
@@ -46,7 +48,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun JokeScreen() {
     var jokeNumber by remember { mutableIntStateOf(1) }
-
     val jokes = stringArrayResource(id = R.array.joke_list)
     var jokeIndex by remember { mutableIntStateOf(jokes.indices.random()) }
 
@@ -83,7 +84,14 @@ fun JokeScreen() {
             )
         }
 
-        Spacer(modifier = Modifier.height(32.dp))
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Text(
+            text = pluralStringResource(id = R.plurals.jokes_seen, count = jokeNumber, jokeNumber),
+            textAlign = TextAlign.Center,
+            color = MaterialTheme.colorScheme.primary,
+            modifier = Modifier.padding(bottom = 16.dp)
+        )
 
         val guestName = stringResource(id = R.string.guest_name)
         Text(

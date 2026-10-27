@@ -4,11 +4,16 @@
 
     <string-array name="joke_list">
         <item>A tester walks into a bar. Orders a beer. Orders 0 beers. Orders 999999999 beers. Orders a lizard. Orders -1 beers.</item>
-        <item>There are 10 types of people in the world: those who understand binary, and those who don\'t.</item>
-        <item>Why do programmers prefer dark mode? Because light attracts bugs.</item>
+        <item>How many programmers does it take to change a light bulb? None, that\'s a hardware problem.</item>
         <item>A SQL query goes into a bar, walks up to two tables and asks: \"Can I join you?\"</item>
+        <item>Why do programmers prefer dark mode? Because light attracts bugs.</item>
     </string-array>
 
     <string name="guest_name">guest</string>
     <string name="greeting">Hello, %1$s! Here is your joke number %2$d.</string>
+
+    <plurals name="jokes_seen">
+        <item quantity="one">%d joke seen so far</item>
+        <item quantity="other">%d jokes seen so far</item>
+    </plurals>
 </resources>
