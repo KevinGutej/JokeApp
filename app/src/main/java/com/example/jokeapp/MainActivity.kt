@@ -22,6 +22,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -46,6 +47,9 @@ class MainActivity : ComponentActivity() {
 fun JokeScreen() {
     var jokeNumber by remember { mutableIntStateOf(1) }
 
+    val jokes = stringArrayResource(id = R.array.joke_list)
+    var jokeIndex by remember { mutableIntStateOf(jokes.indices.random()) }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -60,13 +64,16 @@ fun JokeScreen() {
         )
 
         Text(
-            text = stringResource(id = R.string.current_joke),
+            text = jokes[jokeIndex],
             textAlign = TextAlign.Center,
             modifier = Modifier.padding(bottom = 32.dp)
         )
 
         Button(
-            onClick = { jokeNumber++ },
+            onClick = {
+                jokeNumber++
+                jokeIndex = jokes.indices.random()
+            },
             shape = CircleShape,
             modifier = Modifier.size(120.dp)
         ) {

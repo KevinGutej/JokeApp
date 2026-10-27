@@ -1,7 +1,14 @@
 <resources>
     <string name="app_name">Joke of the Day</string>
     <string name="show_joke_btn">Show a joke</string>
-    <string name="current_joke">A tester walks into a bar. Orders a beer. Orders 0 beers. Orders 999999999 beers. Orders a lizard. Orders -1 beers.</string>
+
+    <string-array name="joke_list">
+        <item>A tester walks into a bar. Orders a beer. Orders 0 beers. Orders 999999999 beers. Orders a lizard. Orders -1 beers.</item>
+        <item>There are 10 types of people in the world: those who understand binary, and those who don\'t.</item>
+        <item>Why do programmers prefer dark mode? Because light attracts bugs.</item>
+        <item>A SQL query goes into a bar, walks up to two tables and asks: \"Can I join you?\"</item>
+    </string-array>
+
     <string name="guest_name">guest</string>
     <string name="greeting">Hello, %1$s! Here is your joke number %2$d.</string>
 </resources>

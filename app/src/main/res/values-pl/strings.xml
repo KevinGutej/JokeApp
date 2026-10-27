@@ -1,7 +1,14 @@
 <resources>
     <string name="app_name">Żart na dziś</string>
     <string name="show_joke_btn">Pokaż żart</string>
-    <string name="current_joke">Tester wchodzi do baru. Zamawia piwo. Zamawia 0 piw. Zamawia 999999999 piw. Zamawia jaszczurkę. Zamawia -1 piwa.</string>
+
+    <string-array name="joke_list">
+        <item>Tester wchodzi do baru. Zamawia piwo. Zamawia 0 piw. Zamawia 999999999 piw. Zamawia jaszczurkę. Zamawia -1 piwa.</item>
+        <item>Na świecie jest 10 rodzajów ludzi: ci, którzy rozumieją system binarny, i ci, którzy go nie rozumieją.</item>
+        <item>Dlaczego programiści wolą tryb ciemny? Bo światło przyciąga pluskwy.</item>
+        <item>Zapytanie SQL wchodzi do baru, podchodzi do dwóch stolików i pyta: \"Mogę się dołączyć?\"</item>
+    </string-array>
+
     <string name="guest_name">gościu</string>
     <string name="greeting">Cześć, %1$s! Oto Twój żart numer %2$d.</string>
 </resources>
