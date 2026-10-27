@@ -16,4 +16,8 @@
         <item quantity="one">%d joke seen so far</item>
         <item quantity="other">%d jokes seen so far</item>
     </plurals>
+
+    <string name="lang_system">System</string>
+    <string name="lang_pl">Polski</string>
+    <string name="lang_en">English</string>
 </resources>

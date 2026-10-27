@@ -18,4 +18,8 @@
         <item quantity="many">Obejrzano %d żartów</item>
         <item quantity="other">Obejrzano %d żartów</item>
     </plurals>
+
+    <string name="lang_system">Systemowy</string>
+    <string name="lang_pl">Polski</string>
+    <string name="lang_en">English</string>
 </resources>
